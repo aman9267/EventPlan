@@ -14,7 +14,7 @@ const EventItem = (props) => {
         month: 'long',
         year: 'numeric'
     })
-    const formatedAddress = location.replace(', ', '/n')
+    const formatedAddress = location.replace(', ', '\n')
     return (
         <li className={classes.item}>
             <img src={image} alt='' />
@@ -31,9 +31,9 @@ const EventItem = (props) => {
                     </div>
                 </div>
                 <div className={classes.actions}>
-                    <Button link={`/event/${id}`}>
+                    <Button link={`/events/${id}`}>
                         <span>Explore Event</span>
-                        <span><ArrowRightIcon /></span>
+                        {/* <span><ArrowRightIcon /></span> */}
                     </Button>
                 </div>
             </div>

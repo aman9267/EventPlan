@@ -8,7 +8,7 @@ function HomePage() {
   console.log(FeaturedEvents)
   return (
     <div>
-        <EventList items={FeaturedEvents} />
+      <EventList items={FeaturedEvents} />
     </div>
   )
 }
